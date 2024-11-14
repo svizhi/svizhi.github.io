@@ -11,6 +11,7 @@
             margin: 40px auto;
             padding: 0 20px;
             text-align: center;
+            color: #333;
         }
         .header-image {
             width: 200px;
@@ -107,6 +108,33 @@
             .location {
                 width: auto;
                
+            }
+        }
+        /* Add dark mode support */
+        @media (prefers-color-scheme: dark) {
+            body {
+                background-color: #1a1a1a;
+                color: #ffffff;
+            }
+            
+            h1, h2 {
+                color: #ffffff;
+            }
+            
+            p {
+                color: #dddddd;
+            }
+            
+            .map-link, .map-text {
+                color: #dddddd;
+            }
+            
+            .map-link:hover {
+                color: #6b8aff;  /* lighter blue for dark mode */
+            }
+            
+            a {
+                color: #6b8aff;
             }
         }
     </style>
