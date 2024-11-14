@@ -12,6 +12,11 @@
             padding: 0 20px;
             text-align: center;
         }
+        .header-image {
+            width: 200px;
+            height: auto;
+            margin-bottom: 30px;
+        }
         h1, h2 {
             color: #333;
             margin-bottom: 20px;
@@ -65,19 +70,54 @@
         .map-text {
             font-size: 12px;
             color: #666;
-            display: none;
         }
         .map-link:hover .map-text {
             display: block;
         }
-        
+        .product-list {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+        .product-list p {
+            font-size: 24px;
+            margin: 0;
+        }
+        @media (min-width: 768px) {
+            .header-image {
+                width: 300px;
+            }
+            .product-list {
+                flex-direction: row;
+                justify-content: center;
+                gap: 20px;
+            }
+            .product-list p {
+                font-size: 28px;
+            }
+            .header-image {
+                width: 300px;
+            }
+            .locations {
+                flex-direction: row;
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+            .location {
+                width: auto;
+               
+            }
+        }
     </style>
 </head>
 <body>
-    <h1>svizhi</h1>
-    <p>фрукти🍉</p>
-    <p>овочі🥦</p>
-    <p>фреші та смузі🧉</p>
+    <img src="img/logo_6724.PNG" alt="svizhi logo" class="header-image" loading="eager">
+    <div class="product-list">
+        <p>фрукти🍉</p>
+        <p>овочі🥦</p>
+        <p>фреші та смузі🧉</p>
+    </div>
     
     <section class="locations">
         <h2>Наші локації у Львові:</h2>
@@ -100,18 +140,6 @@
                 <p class="hours">Пн-Нд: 9 - 21</p>
             </div>
             <a href="https://maps.app.goo.gl/u9KxCE79zTLxcf376?g_st=" target="_blank" class="map-link" aria-label="Open in Google Maps">
-                🗺️
-                <span class="map-text">Відкрити у Google Maps</span>
-            </a>
-        </div>
-
-        <div class="location">
-            <div class="location-info">
-                <p>вул. Героїв УПА, 73</p>
-                <p class="hours">Пн-Сб: 8 - 20</p>
-                <p class="sunday">Нд: 9 - 18</p>
-            </div>
-            <a href="https://maps.app.goo.gl/oZTveDTmf5K4h7zHA?g_st=ic" target="_blank" class="map-link" aria-label="Open in Google Maps">
                 🗺️
                 <span class="map-text">Відкрити у Google Maps</span>
             </a>
