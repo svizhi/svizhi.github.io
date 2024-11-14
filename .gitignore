@@ -1,0 +1,19 @@
+# Ignore mac files
+.DS_Store
+
+# VS Code
+.vscode/
+.history/
+
+# Xcode
+xcuserdata/
+*.xcodeproj/
+!*.xcodeproj/project.pbxproj
+!*.xcodeproj/xcshareddata/
+!*.xcodeproj/project.xcworkspace/
+!*.xcworkspace/contents.xcworkspacedata
+**/xcshareddata/WorkspaceSettings.xcsettings
+
+# Cursor Editor
+.cursor/
+.cursor-server/
