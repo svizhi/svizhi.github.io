@@ -12,7 +12,7 @@
             padding: 20px;
             text-align: center;
         }
-        h1 {
+        h1, h2 {
             color: #333;
             margin-bottom: 20px;
         }
@@ -29,11 +29,75 @@
         a:hover {
             text-decoration: underline;
         }
+        .locations {
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
+        .location {
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+        .location p {
+            margin: 5px 0;
+            font-size: 16px;
+        }
+        .location-info {
+            text-align: left;
+        }
+        .map-link {
+            color: #666;
+            font-size: 20px;
+        }
+        .map-link:hover {
+            color: #405DE6;
+        }
+        .hours {
+            color: #666;
+            font-size: 16px;
+        }
+        .sunday {
+            color: #666;
+            font-size: 16px;
+        }
     </style>
 </head>
 <body>
     <h1>svizhi</h1>
     <p>We sell fruits and vegetables</p>
+    
+    <section class="locations">
+        <h2>Visit us</h2>
+        
+        <div class="location">
+            <div class="location-info">
+                <p>вул. Героїв УПА, 76, Львів</p>
+                <p class="hours">Mon-Sat: 9:00 - 21:00</p>
+                <p class="sunday">Sun: 10:00 - 20:00</p>
+            </div>
+            <a href="https://maps.app.goo.gl/GSN63ivp6FZxxG41A?g_st=ic" target="_blank" class="map-link" aria-label="Open in Google Maps">📍</a>
+        </div>
+
+        <div class="location">
+            <div class="location-info">
+                <p>вул. Угорська, 12, Львів</p>
+                <p class="hours">Mon-Sun: 9:00 - 21:00</p>
+            </div>
+            <a href="https://maps.app.goo.gl/u9KxCE79zTLxcf376?g_st=" target="_blank" class="map-link" aria-label="Open in Google Maps">📍</a>
+        </div>
+
+        <div class="location">
+            <div class="location-info">
+                <p>вул. Героїв УПА, 73, Львів</p>
+                <p class="hours">Mon-Sat: 8:00 - 20:00</p>
+                <p class="sunday">Sun: 9:00 - 18:00</p>
+            </div>
+            <a href="https://maps.app.goo.gl/oZTveDTmf5K4h7zHA?g_st=ic" target="_blank" class="map-link" aria-label="Open in Google Maps">📍</a>
+        </div>
+    </section>
+
     <a href="https://instagram.com/svizhi_ua" target="_blank">Follow us on Instagram</a>
 </body>
 </html>
