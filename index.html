@@ -23,12 +23,12 @@
             margin-bottom: 20px;
         }
         p {
-            color: #666;
+            color: rgb(102, 102, 102);
             font-size: 18px;
             margin-bottom: 20px;
         }
         a {
-            color: #405DE6;
+            color: #405de6;
             text-decoration: none;
             font-weight: bold;
         }
@@ -38,6 +38,10 @@
         .locations {
             margin-top: 40px;
             margin-bottom: 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
         }
         .location {
             margin-bottom: 20px;
@@ -45,6 +49,8 @@
             align-items: center;
             justify-content: space-between;
             gap: 10px;
+            width: 100%;
+            max-width: 400px;
         }
         .location p {
             margin: 5px 0;
@@ -52,9 +58,9 @@
         }
         .location-info {
             text-align: left;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+        }
+        .locations hr {
+            display: none;
         }
         .map-link {
             color: #666;
@@ -70,7 +76,7 @@
         }
         .map-text {
             font-size: 12px;
-            color: #666;
+            color: rgb(102, 102, 102);
         }
         .map-link:hover .map-text {
             display: block;
@@ -102,13 +108,25 @@
             }
             .locations {
                 flex-direction: row;
-                justify-content: center;
-                flex-wrap: wrap;
+                justify-content: space-between;
+                gap: 20px;
+                padding: 0 40px;
             }
             .location {
+                flex: 1;
                 width: auto;
-               
+                max-width: none;
+                margin-bottom: 0;
             }
+            .locations hr {
+                display: block;
+                width: 1px;
+                height: 20px;
+                margin: 0 20px;
+                border: none;
+                background-color: rgb(102, 102, 102);
+            }
+
         }
         /* Add dark mode support */
         @media (prefers-color-scheme: dark) {
@@ -136,6 +154,9 @@
             a {
                 color: #6b8aff;
             }
+            .locations hr {
+                background-color: #dddddd;
+            }
         }
     </style>
 </head>
@@ -146,9 +167,11 @@
         <p>овочі 🥦</p>
         <p>фреші та смузі 🥕+🍊+🫚=🥤</p>
     </div>
+
+    <h2>Наші локації у Львові:</h2>
     
     <section class="locations">
-        <h2>Наші локації у Львові:</h2>
+        
         
         <div class="location">
             <div class="location-info">
@@ -161,6 +184,8 @@
                 <span class="map-text">Відкрити у Google Maps</span>
             </a>
         </div>
+
+        <hr style="width: 1px; height: 20px; margin: 0 20px;">
 
         <div class="location">
             <div class="location-info">
