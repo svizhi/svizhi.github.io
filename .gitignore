@@ -14,6 +14,3 @@ xcuserdata/
 !*.xcworkspace/contents.xcworkspacedata
 **/xcshareddata/WorkspaceSettings.xcsettings
 
-# Cursor Editor
-.cursor/
-.cursor-server/

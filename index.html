@@ -19,7 +19,7 @@
         p {
             color: #666;
             font-size: 18px;
-            margin-bottom: 30px;
+            margin-bottom: 20px;
         }
         a {
             color: #405DE6;
@@ -37,7 +37,7 @@
             margin-bottom: 20px;
             display: flex;
             align-items: center;
-            justify-content: center;
+            justify-content: space-between;
             gap: 10px;
         }
         .location p {
@@ -46,13 +46,29 @@
         }
         .location-info {
             text-align: left;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
         .map-link {
             color: #666;
             font-size: 20px;
+            text-decoration: none;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 5px;
         }
         .map-link:hover {
             color: #405DE6;
+        }
+        .map-text {
+            font-size: 12px;
+            color: #666;
+            display: none;
+        }
+        .map-link:hover .map-text {
+            display: block;
         }
         .hours {
             color: #666;
@@ -66,35 +82,46 @@
 </head>
 <body>
     <h1>svizhi</h1>
-    <p>We sell fruits and vegetables</p>
+    <p>фрукти🍉</p>
+    <p>овочі🥦</p>
+    <p>фреші та смузі🧉</p>
     
     <section class="locations">
-        <h2>Visit us</h2>
+        <h2>Наші локації у Львові:</h2>
         
         <div class="location">
             <div class="location-info">
-                <p>вул. Героїв УПА, 76, Львів</p>
-                <p class="hours">Mon-Sat: 9:00 - 21:00</p>
-                <p class="sunday">Sun: 10:00 - 20:00</p>
+                <p>вул. Героїв УПА, 76</p>
+                <p class="hours">Пн-Сб: 9 - 21</p>
+                <p class="sunday">Нд: 10 - 20</p>
             </div>
-            <a href="https://maps.app.goo.gl/GSN63ivp6FZxxG41A?g_st=ic" target="_blank" class="map-link" aria-label="Open in Google Maps">🗺️</a>
+            <a href="https://maps.app.goo.gl/GSN63ivp6FZxxG41A?g_st=ic" target="_blank" class="map-link" aria-label="Open in Google Maps">
+                🗺️
+                <span class="map-text">Відкрити у Google Maps</span>
+            </a>
         </div>
 
         <div class="location">
             <div class="location-info">
-                <p>вул. Угорська, 12, Львів</p>
-                <p class="hours">Mon-Sun: 9:00 - 21:00</p>
+                <p>вул. Угорська, 12</p>
+                <p class="hours">Пн-Нд: 9 - 21</p>
             </div>
-            <a href="https://maps.app.goo.gl/u9KxCE79zTLxcf376?g_st=" target="_blank" class="map-link" aria-label="Open in Google Maps">🗺️</a>
+            <a href="https://maps.app.goo.gl/u9KxCE79zTLxcf376?g_st=" target="_blank" class="map-link" aria-label="Open in Google Maps">
+                🗺️
+                <span class="map-text">Відкрити у Google Maps</span>
+            </a>
         </div>
 
         <div class="location">
             <div class="location-info">
-                <p>вул. Героїв УПА, 73, Львів</p>
-                <p class="hours">Mon-Sat: 8:00 - 20:00</p>
-                <p class="sunday">Sun: 9:00 - 18:00</p>
+                <p>вул. Героїв УПА, 73</p>
+                <p class="hours">Пн-Сб: 8 - 20</p>
+                <p class="sunday">Нд: 9 - 18</p>
             </div>
-            <a href="https://maps.app.goo.gl/oZTveDTmf5K4h7zHA?g_st=ic" target="_blank" class="map-link" aria-label="Open in Google Maps">🗺️</a>
+            <a href="https://maps.app.goo.gl/oZTveDTmf5K4h7zHA?g_st=ic" target="_blank" class="map-link" aria-label="Open in Google Maps">
+                🗺️
+                <span class="map-text">Відкрити у Google Maps</span>
+            </a>
         </div>
     </section>
 
